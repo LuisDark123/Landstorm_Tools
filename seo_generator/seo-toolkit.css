@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    background: rgb(221,24,38);
+    background: -moz-linear-gradient(90deg, rgba(221,24,38,1) 0%, rgba(255,0,121,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(221,24,38,1) 0%, rgba(255,0,121,1) 100%);
+    background: linear-gradient(90deg, rgba(221,24,38,1) 0%, rgba(255,0,121,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dd1826",endColorstr="#ff0079",GradientType=1);
+}
+
+b{
+    color: rgb(221,24,38);
+    font-size: 17px;
+}
+
+p{
+    font-size: 15px;
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+input, textarea, select{
+    width: calc(100% - 12px);
+    margin-top: 4px;
+    padding: 6px;
+    font-family: system-ui;
+    font-size: 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #efecec;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+textarea{
+    resize: none;
+    min-height: 175px;
+}
+
+label{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+form{
+    width: calc(100% - 60px);
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.container{
+    width: calc(100% - 40px);
+    height: auto;
+    min-height: calc(100vh - 40px);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seo-engine{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group-input{
+    margin-top: 14px;
+}
+
+.form-code{
+    width: calc(100% - 20px);
+    max-width: 320px;
+    min-height: 315px;
+    background-color: #efecec;
+    padding: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btn-generator{
+    width: calc(100% - 30px);
+    margin: inherit;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(221,24,38, .9);
+    background: rgb(221,24,38);
+    background: -moz-linear-gradient(90deg, rgba(221,24,38,1) 0%, rgba(255,0,121,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(221,24,38,1) 0%, rgba(255,0,121,1) 100%);
+    background: linear-gradient(90deg, rgba(221,24,38,1) 0%, rgba(255,0,121,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dd1826",endColorstr="#ff0079",GradientType=1);
+    transition: .3s;
+}
+
+.btn-generator:hover{
+    transform: scale(.95);
+    transition: .3s;
+}
+
+.form-step-1, .form-step-2, .form-step-3, .form-step-4{
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+    margin: 30px 10px;
+}

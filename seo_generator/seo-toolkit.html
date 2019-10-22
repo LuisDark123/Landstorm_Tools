@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="seo-toolkit.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="seo-engine">
+        <form>
+            <div class="form-step-1" id="form-step-1">
+                <p> <b>Paso 1</b> <br> Completa la información esencial que aparecera en las SERPS.</p>
+                <div class="form-group-input">
+                    <label>Titulo de la pagina *</label>
+                    <input placeholder="Ej. La mejor agencia de viajes en México" class="seo-engine-input" id="input-title" required>
+                </div>
+                <div class="form-group-input">
+                    <label>Slug de la pagina</label>
+                    <input placeholder="Ej. agencia-de-viajes-en-mexico" class="seo-engine-title" id="input-slug">
+                </div>
+                <div class="form-group-input">
+                    <label>Descripción de la pagina *</label>
+                    <textarea placeholder="Ej. Visita la agencia de viajes en México más flexible y confiable..." id="input-description"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-step-2" id="form-step-2">
+                <p> <b>Paso 2</b> <br> Define los aspectos técnicos de la pagina al subirla al hosting.</p>
+                <div class="form-group-input">
+                    <label>Dominio o Subdominio *</label>
+                    <input placeholder="Ej. website.com" class="seo-engine-input" id="input-domain">
+                </div>
+                <div class="form-group-input">
+                    <label>Lenguaje *</label>
+                    <select id="input-language">
+                        <option value="es">Español</option>
+                        <option value="en">Ingles</option>
+                    </select>
+                </div>
+                <div class="form-group-input">
+                    <label>Protocolo *</label>
+                    <select id="input-protocol">
+                        <option value="http">HTTP</option>
+                        <option value="https">HTTPS</option>
+                    </select>
+                </div>
+                <div class="form-group-input">
+                    <label>Prefijo *</label>
+                    <select id="input-prefix">
+                        <option value="www.">WWW</option>
+                        <option value="">Sin WWW</option>
+                    </select>
+                </div>
+                <div class="form-group-input">
+                    <label>Tipo de Indexación *</label>
+                    <select id="input-robots">
+                        <option value="index, follow">Index, Follow</option>
+                        <option value="index, nofollow">Index, Nofollow</option>
+                        <option value="noindex, nofollow">Noindex, Nofollow</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-step-3" id="form-step-3">
+                <p> <b>Paso 3</b> <br> Ingresa la información que sera recopilada por Open Graph.</p>
+                <div class="form-group-input">
+                    <label>Nombre del sitio *</label>
+                    <input placeholder="Ej. Agencia México" class="seo-engine-input" id="input-name">
+                </div>
+                <div class="form-group-input">
+                    <label>Ruta de Imagen destacada *</label>
+                    <input placeholder="Ej. images/imagen-destacada.jpg" class="seo-engine-input" id="input-image">
+                </div>
+                <div class="form-group-input">
+                    <label>Ubicación *</label>
+                    <select id="input-locale">
+                        <option value="es_MX">México</option>
+                        <option value="es_CO">Colombia</option>
+                        <option value="es_LA">Latinoamerica</option>
+                        <option value="es_ES">España</option>
+                        <option value="en_US">Estados Unidos</option>
+                    </select>
+                </div>
+                <div class="form-group-input">
+                    <label>Categoria *</label>
+                    <select id="input-category">
+                        <option value="website">Website</option>
+                        <option value="article">Article</option>
+                    </select>
+                </div>
+                <input type="button" value="Generar código" class="btn-generator" id="btn-generator">
+            </div>
+
+            <div class="form-step-4" id="form-step-4">
+                <p> <b>Paso 4</b> <br> Copia el siguiente código y pegalo dentro de la etiqueta head.</p>
+                <div class="form-group-input">
+                    <label>Código SEO</label>
+                    <textarea class="form-code" id="code" onclick="this.focus();this.select()"></textarea>
+                </div>
+            </div>
+        </form>
+
+        
+
+    </div>
+</div>
+<script src="seo-toolkit.js"></script>
+</body>
+</html>
