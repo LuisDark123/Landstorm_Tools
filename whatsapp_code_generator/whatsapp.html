@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="whatsapp.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="seo-engine">
+        <form>
+
+            <div class="form-step-3" id="form-step-3">
+                <p> <b>Paso 1</b> <br> Genera tu código de whatsapp llenando los campos.</p>
+                <div class="form-group-input">
+                    <label>Numero de Telefono Completo *</label>
+                    <input placeholder="Ej. 55 66 77 88 99" class="seo-engine-input" id="input-tel">
+                </div>
+                <div class="form-group-input">
+                    <label>Mensaje Personalizado *</label>
+                    <input placeholder="Ej. Me interesa una oferta..." class="seo-engine-input" id="input-message">
+                </div>
+                <input type="button" value="Generar código" class="btn-generator" id="btn-generator">
+            </div>
+
+            <div class="form-step-4" id="form-step-4">
+                <p> <b>Paso 4</b> <br> Copia el siguiente código y pegalo dentro de la etiqueta head.</p>
+                <div class="form-group-input">
+                    <label>Código SEO</label>
+                    <textarea class="form-code" id="code" onclick="this.focus();this.select()"></textarea>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+<script src="whatsapp.js"></script>
+</body>
+</html>
